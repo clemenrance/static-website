@@ -52,7 +52,7 @@ pipeline{
 
             steps{
                     sshagent(['wanyu']){  
-                    sh 'scp -o StrictHostKeyChecking=no /root/.jenkins/workspace/website/target/webbi.war ubuntu@172.31.13.73:/var/lib/tomcat9/webapps'
+                    sh 'scp -o StrictHostKeyChecking=no /root/.jenkins/workspace/website/target/webbi-1.0-SNAPSHOT.jar ubuntu@172.31.13.73:/var/lib/tomcat9/webapps'
                 }
             }
          }
